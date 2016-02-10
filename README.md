@@ -4,8 +4,10 @@ A Simple Log Analyser
 To run the application Execute main.scala
 
 Finished:-
-1.A module to read the log file - LogReader.scala
-2.A module to parse the log records and check the format and rebuild accordingly - LogParser.scala , BuildRecord.scala
+1.Peading the file as a RDD[STRING] type.
+2.Parsing the file to check its correctness with format.
+3.isolating record with the keywords - Error,Failure
+
 
 TODO:-
 1.Build a hashmap with multimap
@@ -14,7 +16,7 @@ TODO:-
     TimeDetails - class with variables, exit and entry time
     ErrorDetails - class with variables, error stack and timestamp of error
     
-2.Check for errors based on entry/exit points and the keywords-(Exception, Failure) 
+2.isolating record with entry points without any matching exit point.
 
 3.Display the error stack
 
