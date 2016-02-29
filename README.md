@@ -1,8 +1,6 @@
 # ScalaLogAnalyser
 A Simple Log Analyser
 
-To run the application Execute main.scala
-
 Finished:-
 
 1.Reading the file as a RDD[STRING] type.
