@@ -9,6 +9,10 @@ object LogAnalyser {
   def main(args: Array[String]): Unit = {
     //initialize
     readRecord()
+    if (dex!=0)
+      println(" *** Error ***")
+    else{}
+    println("---End of log file---")
   }
   /**
     * A sample record:
@@ -113,7 +117,7 @@ object LogAnalyser {
     if(key.exists(m.contains)||(error==true))
     {
       //build component stack
-      print(" -> Error")
+      print(" *** Error ***")
     }
     print("\n")
     // to test the contents of the stack on every iteration
