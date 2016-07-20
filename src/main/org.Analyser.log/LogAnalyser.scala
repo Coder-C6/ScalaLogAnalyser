@@ -46,7 +46,6 @@ object LogAnalyser {
     val sc = new SparkContext(conf)
     print("Enter file Location : ")
     var con = Console.readLine
-    con="test.txt"
     print(con)
     val fileTemp = new File(con)
     if (fileTemp.exists()) {
